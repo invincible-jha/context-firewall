@@ -1,0 +1,56 @@
+{
+  "name": "@aumos/context-firewall",
+  "version": "0.1.0",
+  "description": "Domain isolation for AI agents — prevent data leaking between work, personal, health, and financial contexts.",
+  "license": "BSL-1.1",
+  "author": "MuVeraAI Corporation",
+  "homepage": "https://github.com/muveraai/aumos-oss/tree/main/context-firewall",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muveraai/aumos-oss.git",
+    "directory": "context-firewall/typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/muveraai/aumos-oss/issues"
+  },
+  "keywords": [
+    "ai-safety",
+    "context-isolation",
+    "domain-firewall",
+    "agent-security",
+    "data-classification",
+    "privacy"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "build:watch": "tsc --project tsconfig.json --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,61 @@
+# Node / TypeScript
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+.tsbuildinfo
+coverage/
+.nyc_output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.env
+*.egg
+.eggs/
+site-packages/
+
+# Package managers
+.pnp/
+.pnp.js
+yarn-error.log
+package-lock.json
+poetry.lock
+uv.lock
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.suo
+.vs/
+
+# Secrets / env
+.env
+.env.local
+.env.*.local
+*.secret
+*.key
+
+# Test artifacts
+junit.xml
+*.lcov
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Temp
+tmp/
+temp/

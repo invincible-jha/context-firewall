@@ -1,5 +1,7 @@
 # context-firewall
 
+[![Governance Score](https://img.shields.io/badge/governance-self--assessed-blue)](https://github.com/aumos-ai/context-firewall)
+
 **Domain isolation for AI agents** — prevent data leaking between work, personal, health, and financial contexts.
 
 Part of the [Aumos OSS](https://github.com/muveraai/aumos-oss) suite (Phase 4, Project 4.2).

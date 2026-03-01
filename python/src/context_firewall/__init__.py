@@ -51,6 +51,15 @@ from .domain import (
 )
 from .firewall import ContextFirewall, ContextFirewallOptions
 from .inspector import DataInspector
+from .multilang import (
+    InjectionMatch,
+    InjectionResult,
+    MultiLangFirewall,
+    normalize_unicode,
+    normalize_homoglyphs,
+    preprocess,
+    strip_zero_width,
+)
 from .types import (
     BoundaryDirection,
     DataClassification,
@@ -95,6 +104,14 @@ __all__ = [
     "DEFAULT_KEYWORD_RULES",
     # Inspector
     "DataInspector",
+    # Multi-language injection detection
+    "MultiLangFirewall",
+    "InjectionMatch",
+    "InjectionResult",
+    "normalize_unicode",
+    "normalize_homoglyphs",
+    "preprocess",
+    "strip_zero_width",
     # Types
     "SensitivityLevel",
     "BoundaryDirection",
